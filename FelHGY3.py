@@ -25,9 +25,11 @@ if talalat == False:
 # segítséggel:
 for kulonbsegek in range(99): 
     if (szamok[kulonbsegek] - szamok[kulonbsegek + 1] > 120) or (szamok[kulonbsegek + 1] - szamok[kulonbsegek] > 120):
-        print(f"Van olyan eset, hogy a két egymást követő szám meghaladja a 120-at")
+        print(f"Van olyan eset, hogy a két egymást követő szám különbsége meghaladja a 120-at")
         break
-    
+    else:
+        print(f"Nincs olyan eset, hogy a két egymást követő szám különbsége meghaladja a 120-at")
+
 if nagyobb_0 > kisebb_0:
     print(f"Több pozitív szám van")
 else:
