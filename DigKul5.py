@@ -10,8 +10,7 @@ for szam in szamok:
     if szamok[szam] - szamok[szam + 1] >= 2:
         meredek_szakasz += 1
 for szam in szamok:
-    szamok.reverse()
-    if szamok[szam] - szamok[szam + 1] >= 2:
+    if szamok[szam+1] - szamok[szam] >= 2:
         visszafele += 1
 
 print(f"Meredek szakaszok száma az odafele vezető úton: {meredek_szakasz}")
